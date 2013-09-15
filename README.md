@@ -10,9 +10,9 @@ A JS carousel that supports mouse/touch/pointers and multiple layout styles. Exa
 		<div class="panel">
 			Lorizzle ipsum bow wow wow sit amizzle.
 		</div>
-	    <div class="panel">
-	    	Pellentesque egizzle for sure. Sizzle erizzle.
-	    </div>
+		<div class="panel">
+			Pellentesque egizzle for sure. Sizzle erizzle.
+		</div>
 	</div>
 
 ### CSS ###
@@ -26,37 +26,15 @@ A JS carousel that supports mouse/touch/pointers and multiple layout styles. Exa
 
 ### JS ###
 
+PandaCarousel requires `window.requestAnimationFrame`. It's wise to polyfill this for now. See https://gist.github.com/paulirish/1579671.
+
 Setup:
 
-	var carousels = document.querySelectorAll('.pandacarousel');
-	var Carousels = [];
-	
-	for (var c = 0, cl = carousels.length; c < cl; c++) {
-	
-		Carousels.push(new PandaCarousel(carousels[c]));
-	
-	}
+	var carousel = new PandaCarousel(document.getElementById('my-carousel'));
 
 Change Layout:
 
-	var single = document.querySelector('.single-layout');
-	var double = document.querySelector('.double-layout');
-	var triple = document.querySelector('.triple-layout');
-	
-	var setLayout = function(childrenPerPage) {
-	
-		for (var c = 0, cl = Carousels.length; c < cl; c++) {
-		  
-			Carousels[c].setLayout(childrenPerPage);
-		
-		}
-	
-	};
-	
-	single.addEventListener('click', function() { setLayout(1); }, false);
-	double.addEventListener('click', function() { setLayout(2); }, false);
-	triple.addEventListener('click', function() { setLayout(3); }, false);
-
+	carousel.setLayout(1); // Set the number of columns
 
 ### Todo ###
 

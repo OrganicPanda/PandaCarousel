@@ -1,18 +1,12 @@
-.pandacarousel { 
-	position: relative;
-	overflow: auto;
-}
-
-.pandacarousel > * {
-	width: 100%;
-}
-
 /* Styles for after JS has got involved */
 .pandacarousel-live { 
+	overflow: auto;
 	overflow-x: hidden;
+	position: relative;
 }
 
 .pandacarousel-live > * { 
+	width: 100%;
 	display: block; 
 	position: absolute;
 	overflow: auto;

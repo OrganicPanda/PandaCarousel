@@ -15,7 +15,7 @@ A JS carousel that supports mouse/touch/pointers and multiple layout styles. Exa
 	
 	</style>
 	
-	<div id="standard-carousel" class="pandacarousel">
+	<div id="my-carousel" class="pandacarousel">
 	    <div class="panel">
 	        Lorizzle ipsum bow wow wow sit amizzle.
 	    </div>

@@ -5,9 +5,10 @@ A JS carousel that supports mouse/touch/pointers and multiple layout styles. Exa
 ## Usage ##
 
 	<link href="PandaCarousel.css" rel="stylesheet">
+	
+	<!-- Each PandaCarousel needs a width and height set. The child panels will be sized up to this container -->
 	<style>
 	
-		/* .pandacarousel needs a width and height set. This is left up to the implementation: */
 		.pandacarousel {
 			width: 100%;
 			height: 100%;
